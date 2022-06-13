@@ -1,0 +1,111 @@
+V "GNAT Lib v4.9"
+P ZX
+
+RN
+RV SIMPLE_BARRIERS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTION_PROPAGATION
+RV NO_EXCEPTIONS
+RV NO_IO
+RV NO_PROTECTED_TYPES
+RV NO_STANDARD_STORAGE_POOLS
+RV SPARK_05
+RV MAX_PROTECTED_ENTRIES=2
+
+U buffer%b		buffer.adb		e93e40f5 NE OO PK
+W ada%s			ada.ads			ada.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W interfaces%s		interfac.ads		interfac.ali
+W system%s		system.ads		system.ali
+W system.img_int%s	s-imgint.adb		s-imgint.ali
+W system.soft_links%s	s-soflin.adb		s-soflin.ali
+W system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
+W system.tasking.protected_objects.entries%s  s-tpoben.adb  s-tpoben.ali
+W system.tasking.protected_objects.operations%s  s-tpobop.adb  s-tpobop.ali
+
+U buffer%s		buffer.ads		2f34e517 EE NE OO PK
+W ada.exceptions%s	a-except.adb		a-except.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W system%s		system.ads		system.ali
+W system.tasking%s	s-taskin.adb		s-taskin.ali
+W system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
+W system.tasking.protected_objects.entries%s  s-tpoben.adb  s-tpoben.ali
+
+D ada.ads		20070406091342 3ffc8e18
+D a-except.ads		20140129161953 f86a4103
+D a-finali.ads		20111121113555 52ecdc1b
+D a-inteio.ads		20070406091342 f64b89a4
+D a-ioexce.ads		20140225151544 e4a01f64
+D a-stream.ads		20140122164720 1a984740
+D a-tags.ads		20111212115430 6c0509d0
+D a-textio.ads		20140129155348 386df5d4
+D a-tiinio.ads		20090409150019 aa04e5d6
+D a-unccon.ads		20070406091342 f9eb8f06
+D buffer.ads		20200913112404 2f34e517
+D buffer.adb		20200913112400 082cd992
+D interfac.ads		20140225151838 69adb1b9
+D i-c.ads		20110801143639 5421119b
+D i-cstrea.ads		20130412125801 8128536b
+D system.ads		20160213135250 bd760655
+D s-atacco.ads		20120515093410 4c36d12f
+D s-crtl.ads		20140225151544 840e6817
+D s-exctab.ads		20140225151139 54135002
+D s-ficobl.ads		20120709130952 55a71d43
+D s-finmas.ads		20140225151139 814daec4
+D s-finroo.ads		20120426095924 4ff27390
+D s-imgint.ads		20090409150019 02dbe0c2
+D s-linux.ads		20140409145429 5b2f79a5
+D s-multip.ads		20101011073009 38ac9f73
+D s-oscons.ads		20160213135300 09f64252
+D s-osinte.ads		20140409145429 59011f13
+D s-parame.ads		20140225151139 ab8cb46a
+D s-pooglo.ads		20110804083314 542f33d0
+D s-soflin.ads		20140225151139 aa763b52
+D s-stache.ads		20140225151139 a37c21ec
+D s-stausa.ads		20110804134155 017a0a05
+D s-stalib.ads		20140225151139 a891183f
+D s-stoele.ads		20140225151139 2dc34a04
+D s-stoele.adb		20140225151139 ed88f8fb
+D s-stopoo.ads		20131010103753 b16154c2
+D s-tasinf.ads		20120730151500 21316953
+D s-taspri.ads		20110927094500 15f617a8
+D s-taskin.ads		20140131154341 3f821f32
+D s-taprob.ads		20110927094500 502249e3
+D s-tpoben.ads		20121029113218 b641f948
+D s-tpobop.ads		20090409150019 5f548bb3
+D s-traent.ads		20140225151139 b5116092
+D s-unstyp.ads		20140225151139 510692af
+D s-wchcon.ads		20140225151139 1b7d22d2
+X 1 ada.ads
+16K9*Ada 19e8 12|1r6 1r45 2r6 2r41
+X 4 a-inteio.ads
+18K13*Integer_Text_IO[9|45] 12|2w10 2r45
+X 8 a-textio.ads
+49K13*Text_IO 471e16 12|1w10 1r49
+263U14*Put_Line 12|12s10 13s10 14s10 15s10 25s10 26s10 27s10 28s10
+X 11 buffer.ads
+1K9*Buffer 17l5 17e11 12|3b14 32l5 32t11
+2i4*Size{integer} 4r22 14r31 12|6r42
+3I12*Item{integer} 6r39 9r23 10r24 12|6r23 19r24
+4M9*Index 6r29 13r24
+6A9*Item_Array(3I12)<4M9> 12r10
+8W19*CircularBuffer 12E7 16l8 16e22 12|4b19 31l8 31t22
+9Y13 Put 9>17 12|6b13 17l11 17t14
+9i17 X{3I12} 12|8r23
+10Y13 Get 10<17 12|19b13 30l11 30t14
+10i17 X{3I12} 12|21m10
+12a7 A{6A9} 12|8r10 21r15
+13m7 In_Ptr{4M9} 12|8r12 9r10 9r20
+13m15 Out_Ptr{4M9} 12|21r17 22r10 22r21
+14i7 Count{integer} 12|6r34 10r10 10r19 15r33 19r35 23r10 23r19 28r33
+15i7 read{integer} 12|24r10 24r18 26r33
+15i13 written{integer} 12|11r10 11r21 13r33
+X 12 buffer.adb
+6i17 X{11|3I12}
+19i17 X{11|3I12}
+X 32 s-stausa.ads
+203U14*Initialize 204i<c,__gnat_stack_usage_initialize>22
+268U14*Output_Results 272i<c,__gnat_stack_usage_output_results>22
+
